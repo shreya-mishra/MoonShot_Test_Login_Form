@@ -1,29 +1,27 @@
-# Create T3 App
+## MoonShot Test
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+**Design Mock Up** : [Link](https://www.figma.com/file/EjNZkDNTtgERV5PgF0mxnt/MERN-Assignment?type=design&node-id=33-667&mode=design)
 
-## What's next? How do I make an app with this?
+**Description**
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+Develop a simple sign-up and login flow for an e-commerce website where users are able to mark the categories that they are Interested in.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+You will see 4 screens in the design.
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+- First 2 are for the registration of new users, 
+- the third one is for the login of an existing user 
+- and the 4th one is a protected page that only logged in users can access. 
+- On this protected page, users see a list of categories that we have in our database (you can use faker to generate this data - https://fakerjs.dev/). 
+- Create 100 entries for the categories in your database using faker. Users can mark the categories that they are interested in. 
+- This is a paginated list where only 6 categories are visible at a time. 
+- Users can interact with pagination to see categories on various pages. 
+- Users should be able to see what categories they selected when they logout and login again. 
+- So we should store what they check in our database.
 
-## Learn More
+The header is common for all the pages. The header should be static for the scope of this assignment and should not have any interactions like menus flying out.
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+**Tech Stack**
+- T3 app (framework)
+- Postgres(Database)
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
-
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
